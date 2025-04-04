@@ -13,7 +13,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; /* Keep image and text centered vertically */
+        flex-direction: column; 
     }
 
     .profile img {
@@ -63,13 +63,10 @@
         width: 30%;
     }
 
-    /* .completed {
-        background-color: #c8e6c9; /* Light green for completed courses */
-    }
 
     h2 {
         background-color: black;
         color: white;
         padding: 10px;
     }
-
+}
