@@ -1,0 +1,75 @@
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: #fff;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Keep image and text centered vertically */
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .section-left {
+        width: 70%;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .section-right {
+        width: 30%;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .course-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .course-card {
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 10px;
+        width: 30%;
+    }
+
+    /* .completed {
+        background-color: #c8e6c9; /* Light green for completed courses */
+    }
+
+    h2 {
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+

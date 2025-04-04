@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page of Aldo I Mancilla Huertas">
+    <meta name="author" content="Juan Perez">
+    <title>Aldo Mancilla - Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <!-- <script src="scripts/course.js" defer></script> -->
+    <script src="scripts/courses.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+    <header>
+        <div class="profile">
+            <img src="images/profile.webp" alt="Profile picture of Aldo Mancilla" class="profile-image">
+            <span>Aldo Mancilla</span>
+        </div>
+        <nav id="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="main-content">
+            <div class="section-left">
+                <h2>Course Work</h2>
+                <div class="section-content">Content for section 1</div>
+            </div>
+            <div class="section-right">
+                <h2>Guatemala, City</h2>
+                <div class="section-content">Content for section 2
+                    <img src="images/guatemala.jpg" alt="Profile picture of Juan Perez" class="profile-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="courses-section">
+            <h2>Courses</h2>
+            <div id="course-cards-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Aldo Mancilla, Guatemala city, Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

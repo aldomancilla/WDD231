@@ -1,0 +1,251 @@
+:root{
+    --primary-color: #1E3A5F;
+    --secondary-color: #fdbf8b;
+    --accent1-color: #E76F51;
+    --accent2-color: #2A9D8F;
+    
+    --heading-font: "Montserrat", sans-serif;
+    --paragraph-font: "Lora", sans-serif;
+    --nav-font: "Montserrat", sans-serif;
+
+    --nav-background-color:var(--primary-color);
+    --nav-link-color:var(--secondary-color);
+    --nav-hover-link-color:var(--primary-color);
+    --nav-hover-background-color:var(--secondary-color);
+}
+
+header{
+    display: block;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+    color: var(--secondary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:var(--heading-font);
+    color:var(--primary-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color:  var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.menu {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.menu button:hover {
+    background-color: var(--secondary-color); 
+    color: var(--primary-color);
+}
+
+/* @media (min-width: 740px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+} */
+
+/* Member cards layout */
+
+
+.grid {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+
+.members {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.list {
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+
+.members {
+    /* max-width: 1200px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+
+.members section {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.members section img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.members section h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.members section p {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.members section a {
+    font-size: 1rem;
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.members section a:hover {
+    text-decoration: underline;
+}
+
+.grid .members {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.list .members {
+    display: block;
+}
+
+.list .members section {
+    max-width: 390px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    max-width: 100%;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    width: 30%; 
+}
+
+.footer-column.left {
+    text-align: left; 
+}
+
+.footer-column.center {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer-column.right {
+    text-align: right; 
+}
+
+.footer-column.left p,
+.footer-column.right p {
+    margin: 0;
+}
