@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     const listButton = document.querySelector("#list");
     const displayArea = document.querySelector("article");
 
-    // Fetch data from JSON
+    
     const response = await fetch("data/members.json");
     const members = await response.json();
 
-    // Function to generate member cards
+    
     function generateMemberCard(member) {
         const section = document.createElement("section");
         section.innerHTML = `
@@ -23,33 +23,33 @@ document.addEventListener("DOMContentLoaded", async function () {
         return section;
     }
 
-    // Load members into the display area
+    
     function loadMembers(view) {
-        displayArea.innerHTML = '';  // Clear previous content
+        displayArea.innerHTML = '';  
         members.forEach((member) => {
             const card = generateMemberCard(member);
             displayArea.appendChild(card);
         });
 
-        // Apply the correct view style
+        
         displayArea.classList.toggle('grid', view === 'grid');
         displayArea.classList.toggle('list', view === 'list');
     }
 
-    // Event listeners for changing view
+    
     gridButton.addEventListener("click", () => loadMembers('grid'));
     listButton.addEventListener("click", () => loadMembers('list'));
 
-    // Set default view
+    
     loadMembers('grid');
 
-    // Last modified date
+    
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
 });
 
-// Menu toggle for small screens
-const hamButton = document.querySelector('#menu');
+// Responsive menu
+const hamButton = document.querySelector('#hambutton');
 const navigation = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {

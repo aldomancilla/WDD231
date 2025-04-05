@@ -6,11 +6,11 @@
     <meta name="description" content="Pinula Chamber Commerce directory">
     <meta name="author" content="Aldo Mancilla">
     <title>San Jose Pinula Chamber - Directory</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="Small.css">
-    <link rel="stylesheet" href="Larger.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css"> -->
     <!-- <link rel="stylesheet" href="styles/style.css"> -->
-    <script src="scripts/script.js" defer></script>
+    <script src="js/script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
 
@@ -22,22 +22,22 @@
 <body>
     <main>
         <header>
-        <div class="header-container">    
-        <div class="hle">
+            <div>
             <img src="images/pinulacc_logo.webp"  width="300px"   alt="Pinula Chamber Commerce">
-        </div>    
-        <div class="hr">
-            <nav>
-                <button id="hambutton"></button>
-                <ul class="navigation">
+            </div>
+            <nav id="menu">
+                <button class="nav-mobile" id="nav-mobile">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <ul class="nav-menu">
                     <li><a href="#" title="Home">Home</a></li>
                     <li><a href="#" title="Discover" class="active">Discover</a></li>
-                    <li class="current-menu-item"><a href="#" title="Directory">Directory</a></li>
+                    <li><a href="#" title="Directory">Directory</a></li>
                     <li><a href="#" title="Join">Join</a></li>
                 </ul>
             </nav>
-        </div>
-        </div>
         </header>
         <div class="menu">
             <button id="grid">◻️ ◻️ ◻️ Grid View</button>
@@ -50,7 +50,7 @@
         
         <footer>
             <div class="footer-container">
-                <!-- Address -->
+                <!-- Adress -->
                 <div class="footer-column left">
                     <p>Fake Avenue 123, San Jose Pinula, ZC 01052 | Telephone: (502) 2020-3030</p>
                 </div>
