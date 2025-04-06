@@ -350,7 +350,7 @@ ul.navigation.open {
 /* normalize.css */
 
 
-/* html{
+html{
     line-height:1.15;-webkit-text-size-adjust:100%
 }
 
@@ -476,4 +476,4 @@ details{
 
 summary{
     display:list-it
-} */
+}
