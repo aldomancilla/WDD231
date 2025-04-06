@@ -2,7 +2,7 @@
     {
         "name": "Pinula Barber Shop",
         "address": "4 avenue 18 street, Zone 1, San Jose Pinula, Guatemala City, Guatemala",
-        "phone_numbe": "(502) 5655-1234",
+        "phone_number": "(502) 5655-1234",
         "websiteUrl": "https://www.barberpinula.com/",
         "image_file": "barber_logo.jpg",
         "membershipLevel": "3",
