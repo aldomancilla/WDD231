@@ -41,7 +41,7 @@ header {
 }
 
 nav {
-	background-color: var(--nav-background-color);
+	background-color: var(--primary-color);
     border-radius: 1rem;
 }
 
@@ -69,8 +69,7 @@ ul.navigation li a {
 }
 
 li.current-menu-item a{
-    background-color: #2A9D8F;
-    
+    background-color:#ffffff2d ;
 }
 
 nav ul{
@@ -88,56 +87,6 @@ ul.navigation.open {
 #hambutton.open::before {
     content: "x";
     margin-right: 1rem;
-}
-
-
-.grid {
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    padding: 1rem;
-    margin: 1rem auto;
-    text-align: center;
-}
-
-.grid section {
-	text-align: center;
-}
-
-
-.grid section > * {
-	margin: 0.1rem;
-}
-
-
-.members {
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 1rem;
-    margin: 1rem auto;
-    text-align: center;
-}
-
-.list {
-    max-width: 400px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    padding: 1rem;
-    margin: 1rem auto;
-    text-align: center;
-}
-
-.grid section {
-	text-align: center;
-}
-
-
-.grid section > * {
-	margin: 0.1rem;
 }
 
 .menu {
@@ -158,7 +107,8 @@ ul.navigation.open {
     color: var(--primary-color);
 }
 
-.members {
+.grid {
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -167,9 +117,8 @@ ul.navigation.open {
     text-align: center;
 }
 
-
-.members section {
-    background-color: white;
+.grid section {
+	background-color: white;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem;
@@ -178,48 +127,86 @@ ul.navigation.open {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.members section img {
+.grid img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 5px;
+    text-align: center;
 }
 
-.members section h3 {
-    font-size: 1.5rem;
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h3 {
+	font-size: 1.5rem;
     margin: 1rem 0 0.5rem;
 }
 
-.members section p {
-    font-size: 1rem;
+
+.list {
+	display: flex;
+	flex-direction: column;
+    /* grid-template-columns: repeat(auto-fit, minmax(1200px, 1fr)); */
+    gap: 10px;
+    padding: 1rem;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+.list section {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0.2rem;
+    align-items: center; 
+}
+
+.list section > * {
+	margin: 0 .1rem;
+}
+
+.list section img {
+	display: none; 
+}
+
+.list section h3 {
+	font-size: .6rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color:rgba(0, 0, 0, 0.030);
+}
+
+section h3 {
+	font-size: .5rem;
     color: var(--primary-color);
 }
 
-.members section a {
-    font-size: 1rem;
+section p {
+	font-size: .5rem;
+    color: var(--primary-color);
+}
+
+section a {
+	font-size: .5rem;
     color: var(--accent1-color);
     text-decoration: none;
     font-weight: bold;
 }
 
-.members section a:hover {
-    text-decoration: underline;
+img {
+	height: 75px;
+	max-width: 100%; 
 }
 
-.grid .members {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.list .members {
-    display: block;
-}
-
-.list .members section {
-    max-width: 390px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.members {
+    max-width: 1200px;
+    display: grid;
 }
 
 footer {
